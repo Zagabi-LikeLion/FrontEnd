@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGABI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/components/css/login/main.css">
+</head>
+
+<body>
+    <form>
+        <div class="logo_container">
+            <img src="/assets/img/mirror.png">
+            <p class="logo_text">JAGABI</p>
+        </div>
+        <hr>
+        <div class="input_container">
+            <input class="email" type="text" placeholder="E-Mail">
+            <input class="password" type="password" placeholder="Password">
+            <div class="error-msg"></div>
+        </div>
+        <div class="button_container">
+            <input class="login" type="submit" id="login" value="로그인" onclick="submitLoginForm(event)">
+            <input class="signin" type="button" id="signin" value="회원가입" onclick="location.href ='/signup/signup.html'"> 
+            <a href="/find/password.html">비밀번호를 잊으셨나요?</a>
+        </div>
+    </form>
+    <script src="/components/js/login/main.js"></script>
+</body>
+
+</html>
