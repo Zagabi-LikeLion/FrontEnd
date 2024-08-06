@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGABI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/components/css/diary/diary.css">
+</head>
+
+<body>
+    <form action="">
+        <header>
+            <div class="logo">
+                <img src="/assets/img/mirror.svg">
+                <p class="logo_text">JAGABI</p>
+            </div>
+            <!-- <div class="kategorie">
+                <input type="button" value="일기">
+                <input type="button" value="가치관">
+                <input type="button" value="내 계정">
+            </div> -->
+            <img src="/assets/img/Ellipse 2.svg" alt="">
+        </header>
+        <div class="title">
+            <span class="real_title">일기</span>
+            <span class="date"></span>
+        </div>
+        <div class="all_container">
+            <div class="input_container">
+                <div class="feel_container">
+                    <span class="intro">오늘의 기분은 어땠나요?</span>
+                    <input id="happy" type="radio" name="feeling" value="HAPPY" />
+                    <label class="feeling happy" for="happy">
+                        <div class="imgimg"><img src="/assets/img/smile.png"></div>
+                    </label>
+                    <input id="sad" type="radio" name="feeling" value="SAD" />
+                    <label class="feeling sad" for="sad">
+                        <div class="imgimg"><img src="/assets/img/cry.png"></div>
+                    </label>
+
+                    <input id="angry" type="radio" name="feeling" value="ANGRY" />
+                    <label class="feeling angry" for="angry">
+                        <div class="imgimg"><img src="/assets/img/angry.png"></div>
+                    </label>
+
+                    <input id="what" type="radio" name="feeling" value="SENSITIVE" />
+                    <label class="feeling what" for="what">
+                        <div class="imgimg"><img src="/assets/img/what.png"></div>
+                    </label>
+
+                    <input id="sosim" type="radio" name="feeling" value="SHY" />
+                    <label class="feeling sosim" for="sosim">
+                        <div class="imgimg"><img src="/assets/img/sosim.png"></div>
+                    </label>
+
+                    <input id="firein" type="radio" name="feeling" value="ANXIOUS" />
+                    <label class="feeling firein" for="firein">
+                        <div class="imgimg"><img src="/assets/img/firein.png"></div>
+                    </label>
+
+                    <input id="double" type="radio" name="feeling" value="BORED" />
+                    <label class="feeling double" for="double">
+                        <div class="imgimg"><img src="/assets/img/double.png"></div>
+                    </label>
+                </div>
+                <div class="diary_write_container">
+                    <input id="diary_title" type="text" placeholder="제목">
+                    <textarea id="diary_main" placeholder="본문"></textarea>
+                    <span class="qna"></span>
+                    <input id="diary_answer1" type="text" placeholder="답변">
+                    <span class="na">느낀점</span>
+                    <textarea id="diary_answer2" placeholder="답변"></textarea>
+                    <input id="diary_submit" type="submit" value="작성 완료">
+                </div>
+            </div>
+            <div class="ex_container">
+                <div class="diary_container">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button type="button" id="prevMonth"><img src="/assets/img/l.svg"></button>
+                            <span id="monthYear"></span>
+                            <button type="button" id="nextMonth"><img src="/assets/img/r.svg"></button>
+                        </div>
+                        <div class="calendar-weekdays">
+                            <div>일</div>
+                            <div>월</div>
+                            <div>화</div>
+                            <div>수</div>
+                            <div>목</div>
+                            <div>금</div>
+                            <div>토</div>
+                        </div>
+                        <div class="calendar-days"></div>
+
+                    </div>
+                </div>
+                <div class="quide_contianer">
+                    <span>색깔 가이드</span>
+                    <div class="color"><img src="/assets/img/Ellipse 1.svg">기쁨</div>
+                    <div class="color"><img src="/assets/img/Ellipse 3.svg">슬픔</div>
+                    <div class="color"><img src="/assets/img/Ellipse 4.svg">화남</div>
+                    <div class="color"><img src="/assets/img/Ellipse 5.svg">예민</div>
+                    <div class="color"><img src="/assets/img/Ellipse 6.svg">소심</div>
+                    <div class="color"><img src="/assets/img/Ellipse 7.svg">불안</div>
+                    <div class="color"><img src="/assets/img/Ellipse 8.svg">따분</div>
+                </div>
+                <button id="home" onclick="location.href='/Dashboard/Dashboard.html'">
+                    <img src="/assets/img/home.svg">
+                    홈으로
+                </button>
+
+            </div>
+        </div>
+    </form>
+    <script src="/components/js/diary/diary.js"></script>
+</body>
+
+</html>

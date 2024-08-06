@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAGABI</title>
+    <link
+      rel="stylesheet"
+      href="../components/css/values/values-collection.css"
+    />
+    <link rel="stylesheet" href="../components/css/header.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="../assets/img2/mirror.png" alt="" />
+        <span>JAGABI</span>
+      </div>
+
+      <div class="kategorie">
+        <input class="btn2" type="button" value="일기" onclick="location.href='/Dashboard/Dashboard.html'">
+        <input class="btn2" type="button" value="가치관" onclick="location.href='/values/values.html'">
+        <input class="btn2" type="button" id="accountButton" value="내 계정">
+        <div id="accountMenu" class="account-menu">
+          <a href="#" id="changeNickname">닉네임 변경</a>
+          <a href="#" id="changePassword">비밀번호 변경</a>
+          <a href="#" id="deleteAccount">회원 탈퇴</a>
+          <a href="#" id="logout">로그아웃</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="collection-title">
+        <a href="values.html" class="arrow-left">
+          <img src="../assets/img2/arrow-left.png" alt="" />
+        </a>
+        <p>가치관</p>
+      </section>
+
+      <div class="values-collection">
+        <!-- <div class="ex">
+          <p>돈</p>
+          <span>친구에게 빌려주지 않기</span>
+        </div>
+
+        <div class="ex">
+          <p>돈</p>
+        </div>
+
+        <div class="ex">
+          <p>돈</p>
+        </div>
+
+        <div class="ex">
+          <p>돈</p>
+        </div> -->
+      </div>
+      <div id="collection-modal" class="modal">
+        <div class="modal-content">
+          <div class="category-input">
+            <input
+              type="text"
+              id="category-input"
+              placeholder="카테고리를 입력해주세요"
+            />
+          </div>
+
+          <div class="detail-list"></div>
+
+          <form id="make">
+            <span class="close-button">
+              <img src="../assets/img2/x.png" alt="" />
+            </span>
+
+            <span class="delete-value">
+              <i class="fa-regular fa-trash-can"></i>
+            </span>
+            <img src="../assets/img2/add-button.png" id="plus" alt="" />
+          </form>
+        </div>
+
+        <div id="reason-modal" class="modal">
+          <div class="reason-modal-content">
+            <p>가치관이 바뀐 이유</p>
+            <textarea id="reason-text" placeholder="이유를 입력해주세요">
+            </textarea>
+
+            <div class="close-reason-button">
+              <span id="close-reason-button">닫기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="circle"></div>
+    <!-- <script src="../components/js/values-collection.js"></script> -->
+    <script src="../components/js/values/collection-test.js"></script>
+    <!-- <script src="../components/js/test.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/37fc5900c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

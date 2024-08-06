@@ -1,0 +1,495 @@
+/* 기본 폰트 및 크기 설정 */
+body {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 헤더 부분 */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header>img {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+.logo {
+    width: 16rem;
+    height: 5rem;
+    margin-left: 0.5rem;
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    background: #EBE1CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.125rem;
+}
+
+.logo>img {
+    width: 4rem;
+    height: 3.65594rem;
+}
+
+.kategorie {
+    width: 16rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kategorie>input {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 1000;
+}
+
+/* 전체 컨테이너 부분 */
+.all_container {
+    margin-bottom: 6.5rem;
+    margin-left: 3.5rem;
+    margin-top: 0.96rem;
+    display: flex;
+}
+
+
+/* 타이틀부분 */
+.title {
+    margin-left: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+}
+
+.real_title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.date {
+    font-size: 1.25rem;
+    font-weight: 350;
+    margin-bottom: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* 감정 선택부분 */
+.feel_container {
+    width: 45.9375rem;
+    height: 6.0625rem;
+    border-radius: 1.25rem;
+    background: rgba(200, 139, 95, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-size: 1.25rem;
+    font-weight: 350;
+    margin-right: 1.5rem;
+}
+
+
+.feel_container input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.happy,
+.angry,
+.sad,
+.what,
+.sosim,
+.firein,
+.double {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 1.25rem;
+    margin-right: 0.8rem;
+}
+
+.imgimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.happy {
+    background-color: #F4FA58;
+}
+
+.sad {
+    background-color: #2E9AFE;
+}
+
+.angry {
+    background-color: #FE2E64;
+}
+
+.what {
+    background-color: #01df74;
+}
+
+.sosim {
+    background-color: #FE2EF7;
+}
+
+.firein {
+    background-color: #FE9A2E;
+}
+
+.double {
+    background-color: #D8D8D8;
+}
+
+.feel_container input:active+.feeling {
+    opacity: .5;
+}
+
+.feel_container input:checked+.feeling {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.feeling {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.1) grayscale(.7) opacity(.7);
+    -moz-filter: brightness(1.1) grayscale(.7) opacity(.7);
+    filter: brightness(1.1) grayscale(.7) opacity(.7);
+}
+
+.feeling:hover {
+    -webkit-filter: brightness(1.2) grayscale(.2) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.2) opacity(.9);
+    filter: brightness(1.2) grayscale(.2) opacity(.9);
+}
+
+/* 입력 컨테이너 */
+
+.diary_write_container {
+    display: flex;
+    width: 51.9375rem;
+    height: 66.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background: rgba(200, 139, 95, 0.10);
+    margin-top: 2.5rem;
+}
+
+#diary_title {
+    margin: 0;
+    height: 2.875rem;
+    width: 44rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #AAA;
+}
+
+#diary_main {
+    width: 43.9375rem;
+    height: 30.4375rem;
+    resize: none;
+    border-radius: 0.3125rem;
+    border: 2px solid #AAA;
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.qna {
+    width: 45rem;
+    font-size: 1.1rem;
+    font-weight: 350;
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#diary_answer1 {
+    width: 44rem;
+    height: 2.875rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #AAA;
+    margin-top: 0.63rem;
+}
+
+.na {
+    font-size: 1.1rem;
+    font-weight: 350;
+    margin-top: 1.3rem;
+    margin-left: -42rem;
+    margin-bottom: -2rem;
+}
+
+#diary_answer2 {
+    width: 44.75rem;
+    height: 8.5rem;
+    border-radius: 0.3125rem;
+    border: 2px solid #AAA;
+    resize: none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    margin-top: 2.5rem;
+}
+
+#diary_change, #diary_delete {
+    width: 9.4375rem;
+    height: 4.4375rem;
+    border: 0;
+    border-radius: 0.625rem;
+    background: #EBE1CE;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+    margin-left: 1rem;
+}
+
+.input_box {
+    width: 44.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 왼쪽 컨테이너 부분 */
+.ex_container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.quide_contianer {
+    width: 21.25rem;
+    height: 34.375rem;
+    border-radius: 1.25rem;
+    background: rgba(200, 139, 95, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quide_contianer>span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2.63rem;
+    margin-top: 1.62rem;
+}
+
+.color {
+    margin-bottom: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.color>img {
+    margin-right: 1.44rem;
+}
+
+#home {
+    width: 9rem;
+    height: 4rem;
+    border-radius: 0.625rem;
+    border: 1px solid #AAA;
+    background: #F1ECEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 5.25rem;
+}
+
+
+/* 달력부분 */
+.calendar {
+    width: 21.25rem;
+    height: auto;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#prevMonth,
+#nextMonth {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: none;
+    background: none;
+}
+
+#nextMonth {
+    margin-right: 0.6rem;
+}
+
+.calendar-header {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.calendar-weekdays {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0.9rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.calendar-weekdays div {
+    padding: 0.5rem 0;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.2rem;
+    margin: 0 1rem 1rem;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.mood-HAPPY {
+    background-color: #F4FA58;
+    color: black;
+    border-radius: 20%;
+}
+
+.mood-SAD {
+    background-color: rgba(46, 154, 254, 0.70);
+    color: white;
+    border-radius: 20%;
+}
+
+.mood-ANGRY {
+    background-color: red;
+    color: white;
+    border-radius: 20%;
+}
+
+.mood-SENSITIVE {
+    background-color: rgba(1, 223, 116, 0.70);
+    color: black;
+    border-radius: 20%;
+}
+
+.mood-BORED {
+    background-color: #D8D8D8;
+    color: white;
+    border-radius: 20%;
+}
+
+.mood-ANXIOUS {
+    background-color: #FE9A2E;
+    color: white;
+    border-radius: 20%;
+}
+
+.mood-SHY {
+    background-color: #FE2EF7;
+    color: white;
+    border-radius: 20%;
+}
+
+.day.today {
+    border: 1px solid #1E90FF;
+    border-radius: 20%;
+}
+
+/* Add these CSS rules for the mood container */
+.mood-HAPPY .img_container {
+    background-color: #F4FA58;
+}
+
+.mood-SAD .img_container {
+    background-color: rgba(46, 154, 254, 0.70);
+}
+
+.mood-ANGRY .img_container {
+    background-color: red;
+}
+
+.mood-EXCITED .img_container {
+    background-color: rgba(1, 223, 116, 0.70);
+}
+
+.mood-NEUTRAL .img_container {
+    background-color: #D8D8D8;
+}
+
+.mood-CONFUSED .img_container {
+    background-color: #FE9A2E;
+}
+
+.mood-DOUBLE .img_container {
+    background-color: #FE2EF7;
+}
+
+/* 애니메이션 부분 */
+#home:hover,
+#diary_change:hover,
+#diary_delete:hover
+{
+    cursor: pointer;
+}
+
+#home:active,
+#diary_change:active,
+#diary_delete:active
+{
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
+    top: 2px;
+}

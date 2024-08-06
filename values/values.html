@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAGABI</title>
+    <link rel="stylesheet" href="/components/css/values/values.css" />
+    <link rel="stylesheet" href="/components/css/header.css" />
+    <link rel="stylesheet" href="/components/css/values/jagavi.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="../assets/img2/mirror.png" alt="" />
+        <span>JAGABI</span>
+      </div>
+      <div class="kategorie">
+        <input class="btn2" type="button" value="일기" onclick="location.href='/Dashboard/Dashboard.html'">
+        <input class="btn2" type="button" value="가치관" onclick="location.href='/values/values.html'">
+        <input class="btn2" type="button" id="accountButton" value="내 계정">
+        <div id="accountMenu" class="account-menu">
+          <a href="#" id="changeNickname">닉네임 변경</a>
+          <a href="#" id="changePassword">비밀번호 변경</a>
+          <a href="#" id="deleteAccount">회원 탈퇴</a>
+          <a href="#" id="logout">로그아웃</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="value">
+        <h2>가치관</h2>
+        <div class="value1">
+          <div class="values">
+            <div id="add-value">
+              <img src="../assets/img2/add-button.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <a href="values-collection.html">
+          <img src="../assets/img2/arrow-right.png" alt="" />
+        </a>
+      </section>
+
+      <section class="calendar-c">
+        <div class="jagavi_calender">
+          <div class="calendar">
+            <div class="calendar-header">
+              <button id="prevJagaviMonth">
+                <img src="/assets/img2/l.svg" alt="Previous Month" />
+              </button>
+              <span id="jagaviMonthYear"></span>
+              <button id="nextJagaviMonth">
+                <img src="/assets/img2/r.svg" alt="Next Month" />
+              </button>
+            </div>
+            <div class="calendar-weekdays">
+              <div>일</div>
+              <div>월</div>
+              <div>화</div>
+              <div>수</div>
+              <div>목</div>
+              <div>금</div>
+              <div>토</div>
+            </div>
+            <div class="calendar-days"></div>
+          </div>
+        </div>
+        <div class="jagavi_modal_container" id="jagaviModal">
+          <div id="modalContent"></div>
+          <button id="closeModal">Close</button>
+        </div>
+      </section>
+
+      <section class="log">
+        <h2>가치관 변화 LOG</h2>
+        <div class="log-view"></div>
+        <a href="values-change.html">
+          <img src="../assets/img2/arrow-right.png" alt="" />
+        </a>
+      </section>
+
+      <section class="trash">
+        <h2>가치관 휴지통</h2>
+        <div class="trash-view"></div>
+        <a href="values-trash.html">
+          <img src="../assets/img2/arrow-right.png" alt="" />
+        </a>
+      </section>
+
+      <div id="values-modal" class="modal">
+        <div class="modal-content">
+          <div class="category-input">
+            <input
+              type="text"
+              id="category-input"
+              placeholder="카테고리를 입력해주세요"
+            />
+          </div>
+
+          <div class="detail-list-container">
+            <div class="detail-list"></div>
+          </div>
+
+          <form id="make">
+            <span class="close-button">
+              <img src="../assets/img2/x.png" alt="" />
+            </span>
+            <!-- <input type="text" id="add" /> -->
+            <img src="../assets/img2/add-button.png" id="plus" alt="" />
+          </form>
+        </div>
+
+        <div id="reason-modal" class="modal">
+          <div class="reason-modal-content">
+            <p>가치관이 바뀐 이유</p>
+            <textarea id="reason-text" placeholder="이유를 입력해주세요">
+            </textarea>
+
+            <div class="close-reason-button">
+              <span id="close-reason-button">닫기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="circle"></div>
+
+    <script src="../components/js/values/log-view.js"></script>
+    <script src="../components/js/values/trash-view.js"></script>
+    <script src="../components/js/values/jagavi.js"></script>
+    <script src="../components/js/values/values.js"></script>
+    <script
+      src="https://kit.fontawesome.com/37fc5900c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

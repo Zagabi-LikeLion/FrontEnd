@@ -1,0 +1,163 @@
+/* Existing styles for the Jagavi Calendar */
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.calender_container {
+  width: 76.25rem;
+  height: 34rem;
+  border-radius: 1.25rem;
+  background: #f5f6fa;
+  margin-bottom: 16rem;
+}
+
+.calender_title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* 달력부분 */
+.calendar {
+  width: 27rem;
+  height: 22rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 27.5%;
+}
+
+#prevMonth,
+#nextMonth {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  background: none;
+}
+
+#nextMonth {
+  margin-right: 0.6rem;
+}
+
+.calendar-header {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.calendar-weekdays {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0.9rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.calendar-weekdays div {
+  padding: 0.5rem 0;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.2rem;
+  margin: 0 1rem 1rem;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.calendar-days .day.today {
+  border: 2px solid #007bff;
+  border-radius: 20%;
+}
+
+/* Background colors for change counts */
+.bg-white {
+  background-color: #fff;
+  border-radius: 20%;
+}
+
+.bg-light-green {
+  background-color: #d0f0c0;
+  border-radius: 20%;
+}
+
+.bg-green {
+  background-color: #b0e57c;
+  border-radius: 20%;
+}
+
+.bg-dark-green {
+  background-color: #9ac43d;
+  border-radius: 20%;
+}
+
+#prevJagaviMonth,
+#nextJagaviMonth {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  background: none;
+}
+
+#nextJagaviMonth {
+  margin-right: 0.6rem;
+}
+
+/* 모달창 부분 */
+.jagavi_modal_container {
+  display: none;
+  /* Hidden by default */
+  width: 24rem;
+  height: 17.5rem;
+  border-radius: 0.625rem;
+  border: 1px solid #ebe1ce;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 30%;
+}
+
+#modalContent {
+  max-height: 14rem;
+  overflow-y: auto;
+}
+
+#modalContent li {
+  font-size: 15px;
+}
+
+#closeModal {
+  margin-top: 1rem;
+  height: 20%;
+  border: none;
+}
+
+li {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+ul {
+  margin-left: -2rem;
+  list-style-type: none;
+}

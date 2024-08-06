@@ -1,0 +1,124 @@
+.values-change-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.values-change-title p {
+  position: relative;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.values-change-title::before,
+.values-change-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ebe1ce;
+}
+
+.values-change-title::before {
+  margin-right: 20px;
+}
+
+.values-change-title::after {
+  margin-left: 20px;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.arrow-left img {
+  width: 30px;
+  height: 30px;
+}
+
+.log-date {
+  margin: 20px 50px;
+}
+
+.log-date span {
+  font-size: 50px;
+}
+
+.log-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 동일한 열로 설정 */
+  gap: 20px; /* 항목 사이에 일정한 간격을 둡니다 */
+}
+
+.ex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-bottom: 30px; */
+}
+
+.ex {
+  background-color: #fbfdff;
+  height: 350px;
+  width: 400px;
+  box-sizing: border-box;
+  margin: 70px 70px 50px 70px;
+  border-radius: 1cm;
+  box-shadow: 3px 3px 20px rgba(221, 220, 220, 0.463);
+  position: relative;
+}
+
+.ex p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.ex span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.log-change {
+  border-top: 1px solid #ebe1ce;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+
+.log-change span {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.reason span {
+  font-size: 25px;
+}
+
+/* 미디어 쿼리로 반응형 디자인 적용 */
+@media (max-width: 1023px) {
+  .values-collection {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 화면이 중간 크기일 때 2개의 열로 설정 */
+  }
+}
+
+@media (max-width: 767px) {
+  .values-collection {
+    grid-template-columns: 1fr; /* 화면이 작은 경우 1개의 열로 설정 */
+  }
+}

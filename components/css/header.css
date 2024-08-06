@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background-color: #c88b5f;
+  border-radius: 0 0 0 100%;
+  z-index: -1;
+  opacity: 10%;
+}
+
+header {
+  position: relative;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+.nav-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* .nav-li {
+  display: flex;
+  gap: 20px;
+} */
+
+
+.modal-h {
+  display: none; /* 기본적으로는 숨김 */
+  position: absolute;
+  z-index: 1;
+  top: 80%; /* 내 계정 메뉴 하단에 위치하도록 조정 */
+  right: 0;
+  width: auto; /* 자동 크기 조정 */
+  height: auto;
+}
+
+.modal-h-content {
+  position: relative;
+  background-color: #fefefe;
+  padding: 0;
+  border: 2px solid #c88b5f;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+.modal-h-content::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* 화살표 위치 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fefefe transparent;
+}
+
+.modal-h-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0; /* 상하 패딩을 조정하여 균등한 간격 */
+}
+
+.modal-h-content ul a {
+  font-size: 15px;
+  display: block;
+  padding: 10px 20px; /* 텍스트 간격 조정 */
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-h-content ul a:last-child {
+  border-bottom: none; /* 마지막 항목의 경계선 제거 */
+}
+
+.modal-h-content ul a:hover {
+  background-color: #f0f0f0;
+}
+
+.title {
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #eee4d4;
+  padding: 15px 10px 15px;
+  border-bottom-left-radius: 0.5cm;
+  border-bottom-right-radius: 0.5cm;
+}
+
+.title img {
+  width: 64px;
+  height: 58.49px;
+}
+
+.title span {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+
+.kategorie {
+  width: 16rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.kategorie>input {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 1000;
+}
+
+
+
+.kategorie > input {
+  background: none;
+}
+
+.btn2:hover
+{
+  cursor: pointer;
+}
+
+
+/* 스타일을 위한 CSS */
+.account-menu {
+  display: none; /* 메뉴를 처음에는 숨깁니다 */
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.account-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.account-menu a:hover {
+  background-color: #f0f0f0;
+}

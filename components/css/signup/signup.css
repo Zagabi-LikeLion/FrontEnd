@@ -1,0 +1,301 @@
+/* 기본 폰트 및 크기 설정 */
+body {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 로고 부분 */
+.logo_container {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo_text {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 100;
+}
+
+img {
+    width: 8rem;
+    height: 8rem;
+}
+
+hr {
+    margin: 0;
+    width: 56.25rem;
+    height: 0.05625rem;
+    border: 0;
+    background-color: #EBE1CE;
+    margin-bottom: 8rem;
+}
+
+/* 입력창 부분 */
+.input_container {
+    display: grid;
+    grid-template-rows: 4rem 4rem 4rem 4rem 3rem;
+    grid-template-columns: 40rem 10rem;
+    row-gap: 1.5rem;
+}
+
+.nickname_contianer {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.email_container {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.btn_container {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.password_container {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.password_chk_container {
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+
+.error_msg {
+    margin-top: -5rem;
+    margin-right: 12rem;
+    grid-row: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -1;
+}
+
+.nickname_contianer,
+.email_container,
+.password_container,
+.password_chk_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nickname_contianer>input,
+.email_container>input,
+.password_container>input,
+.password_chk_container>input {
+    padding-left: 0.8rem;
+    border-radius: 0.625rem;
+    border: 1px solid #AAA;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    width: 23rem;
+    height: 2.875rem;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_container>input {
+    width: 7rem;
+    height: 2.875rem;
+    border: none;
+    border-radius: 0.625rem;
+    background: #EBE1CE;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* 질문 부분 */
+.hr2 {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+.qna_container {
+    display: grid;
+    grid-template-rows: 4rem 4rem;
+    grid-template-columns: 40rem 10rem;
+    row-gap: 1.5rem;
+}
+
+.qna_list {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.answer {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.qna_list,
+.answer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.input {
+    margin-bottom: 10rem;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input>input {
+    border-radius: 0.625rem;
+    background: #EBE1CE;
+    width: 23rem;
+    height: 2.875rem;
+    padding: 0.8125rem 4.75rem 0.75rem 4.75rem;
+    border: none;
+    color: #000;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.qna_list>select {
+    padding-left: 0.8rem;
+    border-radius: 0.625rem;
+    border: 1px solid #AAA;
+    margin-left: 1rem;
+    width: 24.027rem;
+    height: 3.1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.answer>input {
+    padding-left: 0.8rem;
+    border-radius: 0.625rem;
+    border: 1px solid #AAA;
+    width: 23rem;
+    height: 2.875rem;
+    font-size: 1.1rem;
+}
+
+/* 애니매이션 */
+.btn:active,
+.Signin_btn:active {
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
+    top: 2px;
+}
+
+.btn:hover,
+.Signin_btn:hover {
+    cursor: pointer;
+}
+
+/* 에러메세지 부분 */
+.error_msg {
+    color: #F00;
+    font-weight: 400;
+}
+
+/* 이미지 부분 */
+.img_circle {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    margin-left: -4rem;
+}
+
+/* 팝업 */
+/* 팝업 */
+#modalCloseButton {
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 19rem;
+}
+
+#modalCloseButton>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modalContent {
+    display: flex;
+    flex-direction: column;
+    width: 21.25rem;
+    height: 21.25rem;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    transform: translateY(-10%);
+    transition: transform 0.3s ease;
+}
+
+#modalContainer.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modalContent.visible {
+    transform: translateY(0);
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.img_container>img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.p_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.p_container>p {
+    color: #F00;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}

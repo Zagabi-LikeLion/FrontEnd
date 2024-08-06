@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGABI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/components/css/dashboard/dashboard.css">
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/img/mirror.svg">
+            <p class="logo_text">JAGABI</p>
+        </div>
+        <div class="kategorie">
+            <input class="btn2" type="button" value="일기" onclick="location.href='/Dashboard/Dashboard.html'">
+            <input class="btn2" type="button" value="가치관" onclick="location.href='/values/values.html'">
+            <input class="btn2" type="button" id="accountButton" value="내 계정">
+            <div id="accountMenu" class="account-menu">
+                <a href="#" id="changeNickname">닉네임 변경</a>
+                <a href="#" id="changePassword">비밀번호 변경</a>
+                <a href="#" id="deleteAccount">회원 탈퇴</a>
+                <a href="#" id="logout">로그아웃</a>
+            </div>
+        </div>
+        <img src="/assets/img/Ellipse 2.svg" alt="">
+    </header>
+    <div class="content_container">
+        <div class="intro_container">
+            <img src="/assets/img/mirror22.svg">
+            <div class="content">
+                <p class="title">JAGABI</p>
+                <p class="main_content"><b>자</b>신의 <b>가</b>치관 <b>비</b>추기</p>
+                <p class="long_content">가치관 기록 및 분류<br>가치관 변화 추적<br>일기 기능<br>일기, 가치관 캘린더</p>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="goto_diary_container">
+                <span>일기</span>
+                <div class="goto_diary">
+                    <span class="q">오늘의 질문은?</span>
+                    <div class="l_diary_container">
+                        <div class="left_diary">
+                            <span class="a">Q.집에서 시간을 보내면서 어떤 점이 좋았나요?</span>
+                            <input class="btn" type="button" value="일기 쓰러 가기" onclick="location.href='/diary/diary.html'" >
+                        </div>
+                        <img src="/assets/img/3dicons.png">
+                    </div>
+                </div>
+            </div>
+            <div class="goto_jagavi_container">
+                <span>가치관</span>
+                <div class="goto_jagavi">
+                    <span class="gq">오늘은 어떤생각을 했나요?</span>
+                    <div class="l_javabi_container">
+                        <div class="left_jagavi">
+                            <span class="ga">가치관의 변화가 생겼다면 기록해보세요!</span>
+                            <input class="btn"  type="button" value="가치관 기록" onclick="location.href='/values/values.html'">
+                        </div>
+                        <img src="/assets/img/2dicons.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="calender_title">나의 캘린더</span>
+        <div class="calender_container">
+            <div class="diary_calender">
+                일기 캘린더
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prevMonth"><img src="/assets/img/l.svg" alt=""></button>
+                        <span id="monthYear"></span>
+                        <button id="nextMonth"><img src="/assets/img/r.svg" alt=""></button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <div>일</div>
+                        <div>월</div>
+                        <div>화</div>
+                        <div>수</div>
+                        <div>목</div>
+                        <div>금</div>
+                        <div>토</div>
+                    </div>
+                    <div class="calendar-days"></div>
+
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <div class="modal_date"></div>
+                        <div class="feelings">
+                            <span class="ask">오늘의 기분은 어떠셨나요?</span>
+                            <div class="mood_container">
+                                <div class="img_container"><img id="moodImage" src="" alt="Mood Image" /></div>
+                                <span id="feel"></span>
+                            </div>
+                        </div>
+                        <div id="modalTitle"></div>
+                        <div id="modalMainText"></div>
+                        <div class="modal_q1"></div>
+                        <div class="modal_a1"></div>
+                        <div class="modal_q2">느낀 점</div>
+                        <div id="modalImpression"></div>
+                        <input id="change" type="button" value="편집">
+                    </div>
+                </div>
+            </div>
+            <div class="jagavi_calender">
+                가치관 캘린더
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prevJagaviMonth"><img src="/assets/img/l.svg" alt=""></button>
+                        <span id="jagaviMonthYear"></span>
+                        <button id="nextJagaviMonth"><img src="/assets/img/r.svg" alt=""></button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <div>일</div>
+                        <div>월</div>
+                        <div>화</div>
+                        <div>수</div>
+                        <div>목</div>
+                        <div>금</div>
+                        <div>토</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/components/js/dashboard/dashboard.js"></script>
+</body>
+
+</html>

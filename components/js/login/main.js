@@ -1,4 +1,4 @@
-var API_SERVER_DOMAIN = "http://15.164.253.0:8081";
+let API_SERVER_DOMAIN = "http://zagabi.shop";
 //URL의 중복을 줄이기 위한 변수 입니다.
 
 let msg = "E-Mail/비밀 번호를 재확인 해주세요";
@@ -6,6 +6,7 @@ let msgContainer = document.querySelector(".error-msg");
 let loginBtn = document.querySelector("#login");
 let emailInput = document.querySelector(".email");
 let passwordInput = document.querySelector(".password");
+
 
 // 에러 메시지 띄우기
 function displayErrorMessage(box, errorMessage) {

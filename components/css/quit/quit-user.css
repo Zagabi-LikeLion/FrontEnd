@@ -1,0 +1,38 @@
+.quit-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.quit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 70px;
+  background-color: #ebe1ce;
+  border-radius: 0.3cm;
+}
+
+.quit-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.quit-button span {
+  font-size: 20px;
+}
+
+.quit-button:hover {
+  cursor: pointer;
+}
+
+.quit-button:active {
+  box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.5);
+}

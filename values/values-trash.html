@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAGABI</title>
+    <link rel="stylesheet" href="../components/css/values/values-trash.css" />
+    <link rel="stylesheet" href="../components/css/header.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="../assets/img2/mirror.png" alt="" />
+        <span>JAGABI</span>
+      </div>
+
+      <div class="kategorie">
+        <input class="btn2" type="button" value="일기" onclick="location.href='/Dashboard/Dashboard.html'">
+        <input class="btn2" type="button" value="가치관" onclick="location.href='/values/values.html'">
+        <input class="btn2" type="button" id="accountButton" value="내 계정">
+        <div id="accountMenu" class="account-menu">
+          <a href="#" id="changeNickname">닉네임 변경</a>
+          <a href="#" id="changePassword">비밀번호 변경</a>
+          <a href="#" id="deleteAccount">회원 탈퇴</a>
+          <a href="#" id="logout">로그아웃</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="values-trash-title">
+        <a href="values.html" class="arrow-left">
+          <img src="../assets/img2/arrow-left.png" alt="" />
+        </a>
+        <p>가치관 휴지통</p>
+      </section>
+
+      <div class="trash-date"></div>
+
+      <div class="trash-collection"></div>
+    </main>
+    <div class="circle"></div>
+    <script src="../components/js/values/values-trash.js"></script>
+  </body>
+</html>

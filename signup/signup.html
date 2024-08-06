@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGABI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/components/css/signup/signup.css">
+</head>
+
+<body>
+    <form>
+        <div class="logo_container">
+            <img src="/assets/img/mirror.png">
+            <p class="logo_text">JAGABI</p>
+        </div>
+        <hr>
+        <div class="input_container">
+            <div class="nickname_contianer">
+                닉네임 입력
+                <input type="text" placeholder="닉네임 입력">
+            </div>
+            <div class="email_container">
+                이메일 입력
+                <input id="email" type="text" placeholder="E-Mail">
+            </div>
+            <!-- <div class="btn_container">
+                <input class="btn" type="button" value="중복확인">
+            </div> -->
+            <div class="password_container">
+                비밀번호 입력
+                <input id="password" type="password" placeholder="Password">
+            </div>
+            <div class="password_chk_container">
+                비밀번호 확인
+                <input id="password2" type="password" placeholder="Password">
+            </div>
+            <div class="error_msg"></div>
+        </div>
+        <hr class="hr2">
+        <div class="qna_container">
+            <div class="qna_list">
+                비밀번호 분실 시 질문
+                <select name="qna" id="qna">
+                    <option value="">질문을 선택해주세요</option>
+                    <option value="1">어린 시절 가장 친한 친구의 이름은 무엇인가요?</option>
+                    <option value="2">첫 번째 반려동물의 이름은 무엇인가요?</option>
+                    <option value="3">부모님의 만난 장소는 어디인가요?</option>
+                    <option value="5">첫 번째 학교의 이름은 무엇인가요?</option>
+                    <option value="6">결혼식 날짜는 언제인가요?</option>
+                    <option value="7">첫 번째 자동차의 모델은 무엇인가요?</option>
+                    <option value="8">가장 좋아하는 선생님의 이름은 무엇인가요?</option>
+                    <option value="9">생일은 언제인가요?</option>
+                    <option value="10">첫 번째 직장의 이름은 무엇인가요?</option>
+                </select>
+            </div>
+            <div class="answer"><input type="text" placeholder="답변을 입력해주세요"></div>
+        </div>
+        <div class="input"><input class="Signin_btn" type="submit" value="회원가입"></div>
+    </form>
+    <!-- <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <button id="modalCloseButton"><img src="/assets/img/x.png"></button>
+            <div class="img_container"><img src="/assets/img/alert-circle.png"></div>
+            <div class="p_container"><p>이메일을 재확인해주세요</p></div>
+            
+        </div>
+    </div> -->
+
+    <script src="/components/js/signup/signup.js"></script>
+</body>
+
+</html>
